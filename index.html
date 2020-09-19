@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://website.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://website.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/03/hello-world/" class="article-date">
+  <time datetime="2020-07-03T08:17:59.311Z" itemprop="datePublished">2020-07-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/03/hello-world/">hello-world</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-class和public-class"><a href="#title-class和public-class" class="headerlink" title="title:class和public class"></a>title:class和public class</h2><h3 id="class和public-class"><a href="#class和public-class" class="headerlink" title="class和public class"></a>class和public class</h3><p>1、class<br>先在一个Java文件中定义多个class，代码如下：</p>
+<p>class A{<br>}</p>
+<p>class B{<br>}</p>
+<p>class C{<br>}</p>
+<p>class D{<br>}</p>
+<p>class E{<br>}<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>创建一个Test.java源文件，在该文件中定义了五个类A类,B类,C类,D类和E类,使用javac命令编译之后得到五个.class文件，分别是A.class,B.class,C.class,D.class和E.class。</p>
+<p>D:\java\java-project&gt;javac Test.java<br>1<br>编译结果</p>
+<p>2、public class<br>接下来，在Test.java源文件中定义一个“公开的类F”，如下：</p>
+<p>class A{<br>}</p>
+<p>class B{<br>}</p>
+<p>class C{<br>}</p>
+<p>class D{<br>}</p>
+<p>class E{<br>}</p>
+<p>public class F{<br>}<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>定义了“公开的类F”之后，用javac命令编译，可以看到编译报错。</p>
+<p>D:\java\java-project&gt;javac Test.java<br>1<br>编译结果<br>如果将“F”改成源文件名Test，再用javac命令编译，可以得到相应的.class文件。</p>
+<p>class A{<br>}</p>
+<p>class B{<br>}</p>
+<p>class C{<br>}</p>
+<p>class D{<br>}</p>
+<p>class E{<br>}</p>
+<p>/*<br>public class F{<br>}<br>*/</p>
+<p>public class Test{<br>}<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>使用javac编译，可以得到结果：</p>
+<p>D:\java\java-project&gt;javac Test.java<br>1<br>编译结果</p>
+<p>3、结论<br>通过前面的测试可以看出，当在Test.java源文件中定义多个class时，使用javac命令编译之后可以得到相应的.class文件，但是，当定义一个公开的类时，使用javac命令编译时会出现错误，我们得到有如下结论：<br>（1）一个java源文件可以定义多个class；<br>（2）public的类不是必须的，可以没有；<br>（3）在源文件中只要有一个class的定义，那么必然会对应生成对应的.class文件；<br>（4）public类可以在java源文件中没有，但是，如果有的话，public修饰的类名必须和源文件名保持一致；<br>在这里插入图片描述<br>（5）public的类如果有，最多也只能有一个。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://website.com/2020/07/03/hello-world/" data-id="ckcsheycf0000ocvyhbie26ql" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/03/hello-world/">hello-world</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
