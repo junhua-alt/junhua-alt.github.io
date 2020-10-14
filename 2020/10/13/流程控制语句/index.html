@@ -20,17 +20,21 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://website.com/archives/2020/07/index.html">
+    <meta name="description" content="流程控制语句主要内容 if else判断语句 switch选择语句 for循环语句 while循环语句 do while循环语句一、流程控制1、概述在一个程序执行的过程中，各条语句的执行顺序对程序的结果是有直接影响的。也就是说，程序的流程对程序最终的运行结果有着直接的影响。所以，我们必须清楚每条语句的执行流程。而且，很多时候，我们要通过控制语句的执行顺序来实现我们要完成的功能。2、顺序结构1234">
+<meta property="og:type" content="article">
+<meta property="og:title" content="流程控制语句">
+<meta property="og:url" content="http://website.com/2020/10/13/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="流程控制语句主要内容 if else判断语句 switch选择语句 for循环语句 while循环语句 do while循环语句一、流程控制1、概述在一个程序执行的过程中，各条语句的执行顺序对程序的结果是有直接影响的。也就是说，程序的流程对程序最终的运行结果有着直接的影响。所以，我们必须清楚每条语句的执行流程。而且，很多时候，我们要通过控制语句的执行顺序来实现我们要完成的功能。2、顺序结构1234">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-13T12:10:27.627Z">
+<meta property="article:modified_time" content="2020-10-13T12:57:58.464Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>junhua&#39;s blog</title>
+    <title>流程控制语句 · junhua&#39;s blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -211,12 +215,23 @@
 <meta name="generator" content="Hexo 4.2.1"></head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >junhua&#39;s blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">流程控制语句</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>junhua's blog</a>
 </header>
@@ -228,24 +243,68 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            流程控制语句
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">267</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/10/13</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -346,40 +405,62 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/07/03/hello-world/" >
-            
-                <span>hello-world</span>
-        </a>
-        <div class="abstract-content">
-            
-title:class和public classclass和public class1、class先在一个Java文件中定义多个class，代码如下：
-class A{}
-class B{}
-class C{}
-class D{}
-class E{}1234567891011121314创建一个Test.java源文件，在该文件中定义了五个类A类,B类,C类,D类和E类,使用javac命令编译之后得到五个.class文件，分别是A.class,B.class,C.class,D.class和E.class。
-D:\java\java-project&gt;javac Test.java...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/07/03</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><ul>
+<li>if else判断语句</li>
+<li>switch选择语句</li>
+<li>for循环语句</li>
+<li>while循环语句</li>
+<li>do while循环语句<h2 id="一、流程控制"><a href="#一、流程控制" class="headerlink" title="一、流程控制"></a>一、流程控制</h2><h3 id="1、概述"><a href="#1、概述" class="headerlink" title="1、概述"></a>1、概述</h3>在一个程序执行的过程中，各条语句的执行顺序对程序的结果是有直接影响的。也就是说，程序的流程对程序最终的运行结果有着直接的影响。所以，我们必须清楚每条语句的执行流程。而且，很多时候，我们要通过控制语句的执行顺序来实现我们要完成的功能。<h3 id="2、顺序结构"><a href="#2、顺序结构" class="headerlink" title="2、顺序结构"></a>2、顺序结构</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">    <span class="comment">//顺序执行，根据写的程序，从上到下运行</span></span><br><span class="line">    System.out.println(<span class="string">"1"</span>);</span><br><span class="line">    System.out.println(<span class="string">"2"</span>);</span><br><span class="line">    System.out.println(<span class="string">"3"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="二、判断语句"><a href="#二、判断语句" class="headerlink" title="二、判断语句"></a>二、判断语句</h2><h3 id="1、判断语句1—if"><a href="#1、判断语句1—if" class="headerlink" title="1、判断语句1—if"></a>1、判断语句1—if</h3></li>
+<li>if语句的一般格式：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if(关系表达式)&#123;</span><br><span class="line">    语句体；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>执行流程</br><br>(1)首先判断关系表达式看结果是true还是false；</br><br>(2)如果是true就执行语句体1；</br><br>(3)如果是false就执行语句体2.</br></li>
+</ul>
+
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="http://website.com">John Doe</a>
+            <p>原文链接：<a href="http://website.com/2020/10/13/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/">http://website.com/2020/10/13/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</a>
+            <p>发表日期：<a href="http://website.com/2020/10/13/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/">October 13th 2020, 8:10:27 pm</a>
+            <p>更新日期：<a href="http://website.com/2020/10/13/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/">October 13th 2020, 8:57:58 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2020/07/03/hello-world/" title= "hello-world">
+                    <div class="prevTitle">hello-world</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -472,6 +553,24 @@ D:\java\java-project&gt;javac Test.java...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#流程控制语句"><span class="toc-number">1.</span> <span class="toc-text">流程控制语句</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主要内容"><span class="toc-number">1.1.</span> <span class="toc-text">主要内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、流程控制"><span class="toc-number">1.2.</span> <span class="toc-text">一、流程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、概述"><span class="toc-number">1.2.1.</span> <span class="toc-text">1、概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、顺序结构"><span class="toc-number">1.2.2.</span> <span class="toc-text">2、顺序结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、判断语句"><span class="toc-number">1.3.</span> <span class="toc-text">二、判断语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、判断语句1—if"><span class="toc-number">1.3.1.</span> <span class="toc-text">1、判断语句1—if</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -606,6 +705,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
